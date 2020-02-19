@@ -1,0 +1,616 @@
+@import "./colors";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/*******************************************NAVIGATION*******************************************/
+.navbar {
+  background-color: #192a56;
+  padding: 0 5%;
+
+  .nav-item a {
+    color: $primaryText;
+    margin: 0 20px;
+    &:hover {
+      border-bottom: 1px solid #c23616;
+    }
+  }
+  ul {
+    width: 600px;
+  }
+  img {
+    max-height: 6vh;
+  }
+  .navtog {
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+
+    .navbar-toggler-icon {
+      background-color: white;
+      width: 25px;
+      height: 2px;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+  }
+  .dropdown-menu .dropdown-item {
+    color: rgb(7, 7, 7);
+    margin: 0;
+  }
+}
+
+/*******************************************JUMBO*******************************************/
+.jumbotron {
+  background-color: #ffffff;
+
+  .row-nas {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    .lead {
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: 800;
+      text-shadow: 3px 1px rgb(114, 106, 106);
+      margin: 0 0 30px 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+/*******************************************CAROUSEL*******************************************/
+.carousel-inner {
+  width: 70%;
+  margin: 0 auto 100px;
+
+  img {
+    width: 100%;
+    max-height: 80vh;
+  }
+}
+/*******************************************O NAMA*******************************************/
+.br {
+  width: 60%;
+  text-align: center;
+  padding: 28px 0;
+  border-bottom: 1px solid $hoverTextLight;
+  margin: auto;
+  margin-bottom: 40px;
+  h1 {
+    font-weight: 800;
+  }
+}
+
+.onama {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 80px;
+  font-size: 22px;
+  border-bottom: 1px solid $hoverTextLight;
+  padding-bottom: 45px;
+  width: 60%;
+  .btn-primary {
+    color: rgb(7, 7, 7);
+    font-size: 22px;
+    background: #ffffff;
+    margin: 20px 0 0 0;
+    max-width: 400px;
+    height: 6vh;
+    border: 1px solid $hoverTextLight;
+
+    &:hover {
+      background-color: $hoverTextLight;
+      border: none;
+      color: #ffffff;
+      width: 300px;
+    }
+  }
+}
+
+/*******************************************PROIZVODI*******************************************/
+.h3proiz {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  width: 60%;
+  padding-bottom: 45px;
+  margin: 0 auto;
+}
+.proizvodi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 90px;
+  padding-bottom: 45px;
+  width: 60%;
+
+  border-bottom: 1px solid $hoverTextLight;
+
+  li {
+    list-style: none;
+    margin: 0 40px;
+    text-align: center;
+    font-size: 22px;
+  }
+  a {
+    color: $hoverTextLight;
+    text-decoration: none;
+
+    &:hover {
+      color: #c23616;
+      padding: 10px 0;
+      border-bottom: 2px solid #c23616;
+    }
+  }
+}
+
+/*******************************************CARD PROIZVODI*******************************************/
+.card-pro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto 100px;
+
+  h5 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    color: $parText;
+  }
+  .btn-primary {
+    color: rgb(26, 26, 26);
+    background-color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $hoverTextDark;
+      border: none;
+    }
+  }
+}
+
+/*******************************************QUESTION*******************************************/
+.question {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 100px;
+  min-height: 30vh;
+  background-image: linear-gradient(to bottom right, #273c75, #f5f6fa);
+  background-attachment: fixed;
+  padding: 0;
+
+  h1 {
+    padding-top: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 20px;
+    color: $primaryText;
+  }
+}
+
+/*******************************************KONTAKT*******************************************/
+
+.kontakt {
+  text-align: center;
+  h1 {
+    font-weight: 700;
+    border-bottom: 1px solid $hoverTextLight;
+    padding-bottom: 45px;
+    width: 60%;
+    margin: auto;
+  }
+  .box {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 45px auto;
+  }
+  img {
+    width: 70px;
+    margin-bottom: 25px;
+  }
+  .box2 {
+    h2 {
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    img {
+      margin-bottom: 45px;
+    }
+    &:hover a img {
+      border-radius: 50%;
+      -webkit-box-shadow: 0 8px 6px -6px black;
+      -moz-box-shadow: 0 8px 6px -6px black;
+      box-shadow: 0 8px 6px -6px black;
+    }
+  }
+}
+/*******************************************KONTAKT STRANICA*******************************************/
+.kont {
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.map {
+  iframe {
+    width: 60%;
+  }
+}
+/*******************************************FOOTER*******************************************/
+footer {
+  min-height: 8vh;
+  background-color: #2f3640;
+  color: $primaryText;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+/*******************************************PVC PROZORI*******************************************/
+
+.s89 {
+  display: flex;
+  width: 60%;
+  margin: 25px auto 25px;
+  text-align: center;
+  align-items: center;
+  height: 4vh;
+  a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .s8 {
+    width: 50%;
+    background-color: #353b48;
+    margin-right: 20px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+  .s9 {
+    width: 50%;
+    background-color: #8c7ae6;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+}
+
+.naslov {
+  padding: 0;
+  margin: 0;
+
+  .row-nas {
+    align-items: flex-start;
+    padding-top: 70px;
+    margin-bottom: 30px;
+    img {
+      max-width: 500px;
+    }
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  h6 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 17px;
+  }
+  p strong {
+    font-weight: 600;
+  }
+}
+.ime-pro {
+  margin-left: 110px;
+  h5 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  h6 {
+    margin: 45px 0 40px 0;
+    font-size: 21px;
+  }
+}
+.row-prozori {
+  width: 90%;
+  margin: 0 auto;
+  img {
+    width: 300px;
+  }
+}
+.pro-kar {
+  margin-bottom: 50px;
+  width: 90%;
+  margin: 0 auto 50px;
+  .b1p {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 400px;
+  }
+}
+
+.breadcrumb {
+  .deactive a {
+    text-decoration: none;
+    color: #6c757d;
+    &:hover {
+      border-bottom: 1px solid #273c75;
+    }
+  }
+}
+
+.cont {
+  width: 70%;
+  margin: 10px auto;
+
+  h1 {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Paytone One", sans-serif;
+    color: #40739e;
+    opacity: 0.9;
+    margin: 15px 0;
+  }
+  .iqPRO {
+    display: flex;
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    p {
+      margin: 25px auto;
+    }
+  }
+  .itemS8 {
+    display: flex;
+    ul {
+      width: 30%;
+      margin: 0 10px;
+      li {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.tab-cijene {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0;
+  .box-pro-c {
+    width: 30%;
+    margin: 0 50px;
+    .nasl-pro {
+      display: flex;
+      h4 {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: #44bd32;
+        letter-spacing: 1px;
+        font-family: "Paytone One", sans-serif;
+      }
+      img {
+        width: 200px;
+      }
+    }
+    table {
+      font-size: 15px;
+      td {
+        width: 30%;
+      }
+    }
+  }
+}
+/*******************************************VRATA*******************************************/
+.proiz-bread a {
+  color: $parText;
+}
+
+.breadcrumb {
+  min-height: 2vh;
+  font-size: 15px;
+  padding-left: 110px;
+}
+
+.headVrata {
+  text-align: center;
+  padding: 0;
+  h1 {
+    font-weight: 700;
+    margin: 45px 0;
+  }
+}
+
+.podnaslov {
+  text-align: center;
+  img {
+    width: 70%;
+    height: 70%;
+  }
+  h5 {
+    font-size: 24px;
+    margin: 47px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #353b48;
+  }
+}
+
+.vrata-pro {
+  width: 70%;
+  margin: 0 auto 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .boxv {
+    text-align: center;
+  }
+  img {
+    width: 280px;
+    height: 500px;
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .s89 {
+    width: 100%;
+    a {
+      font-size: 23px;
+    }
+  }
+
+  .cont {
+    width: 90%;
+    .itemS8 {
+      ul {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cont {
+    width: 90%;
+    margin: auto;
+    .itemS8 {
+      ul {
+        font-size: 15px;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .breadcrumb {
+    padding-left: 65px;
+    .breadcrumb-item {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .s89 {
+    width: 100%;
+
+    a {
+      font-size: 17px;
+    }
+  }
+
+  .naslov .row-nas {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    p {
+      margin: 5px auto;
+    }
+    h6 {
+      font-size: 25px;
+    }
+  }
+  .cont {
+    h1 {
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+    .iqPRO {
+      display: flex;
+
+      p {
+        margin: 25px auto;
+      }
+    }
+    .itemS8 {
+      display: flex;
+      flex-direction: column;
+      ul {
+        width: 100%;
+      }
+    }
+  }
+
+  .tab-cijene {
+    .box-pro-c {
+      width: 70%;
+
+      .nasl-pro {
+        h4 {
+          font-size: 16px;
+        }
+        img {
+          width: 200px;
+        }
+      }
+      table {
+        font-size: 15px;
+        td {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .cont {
+    .iqPRO {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .tab-cijene {
+    .box-pro-c {
+      width: 100%;
+
+      .nasl-pro {
+        h4 {
+          font-size: 16px;
+        }
+        img {
+          width: 150px;
+        }
+      }
+      table {
+        font-size: 13px;
+        td {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
