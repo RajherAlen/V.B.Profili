@@ -290,12 +290,12 @@ body {
 
 /*******************************************FOOTER*******************************************/
 footer {
-  min-height: 8vh;
+  min-height: 10vh;
   background-color: #2f3640;
   color: #f8f8f8;
   text-align: center;
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /*******************************************PVC PROZORI*******************************************/
@@ -385,11 +385,12 @@ footer {
   font-weight: 700;
   font-size: 25px;
   margin-bottom: 30px;
+  color: #8c7ae6;
 }
 
 .ime-pro h6 {
   margin: 45px 0 40px 0;
-  font-size: 21px;
+  font-size: 25px;
 }
 
 .row-prozori {
@@ -417,7 +418,8 @@ footer {
 }
 
 .pro-kar img {
-  width: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .breadcrumb .deactive a {
@@ -549,8 +551,8 @@ footer {
 }
 
 .podnaslov img {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
 }
 
 .podnaslov h5 {
@@ -561,7 +563,7 @@ footer {
 }
 
 .vrata-pro {
-  width: 70%;
+  width: 100%;
   margin: 0 auto 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,14 +575,18 @@ footer {
       flex-wrap: wrap;
 }
 
+.vrata-pro strong {
+  color: #c23616;
+}
+
 .vrata-pro .boxv {
   text-align: center;
 }
 
 .vrata-pro img {
-  width: 280px;
-  height: 500px;
-  margin: 10px 20px;
+  width: 180px;
+  height: 300px;
+  margin: 10px 40px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -599,6 +605,10 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .jumbotron {
+    width: 90%;
+    margin: auto;
+  }
   .cont {
     width: 90%;
     margin: auto;
@@ -615,25 +625,66 @@ footer {
   .breadcrumb .breadcrumb-item {
     font-size: 14px;
   }
+  .row-nas .col-xl-5 img {
+    margin-left: 30%;
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .s89 {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .s89 .s8 {
+    margin: 0 0 20px;
   }
   .s89 a {
-    font-size: 16px;
+    font-size: 20px;
   }
   .naslov .row-nas {
     padding: 20px 0;
-    text-align: center;
     width: 100%;
   }
   .naslov .row-nas p {
-    margin: 5px auto;
+    margin: 15px auto;
+    font-size: 14px;
   }
   .naslov .row-nas h6 {
-    font-size: 25px;
+    font-size: 18px;
+  }
+  .naslov .row-nas img {
+    width: 200px;
+    margin-left: 35%;
+  }
+  .naslov h1 {
+    font-size: 22px;
+  }
+  .ime-pro {
+    margin-left: 7%;
+  }
+  .ime-pro h5 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .ime-pro h6 {
+    margin: 10px 0;
+  }
+  .row-prozori {
+    text-align: center;
+  }
+  .row-prozori img {
+    width: 200px;
+  }
+  .b1p img {
+    width: 300px;
   }
   .cont h1 {
     font-weight: 400;
@@ -675,9 +726,47 @@ footer {
   .tab-cijene .box-pro-c table td {
     width: 40%;
   }
+  .breadcrumb {
+    padding-left: 35px;
+  }
+  .breadcrumb .breadcrumb-item {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  .s89 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .s89 .s8 {
+    margin: 0 0 20px;
+    width: 300px;
+  }
+  .s89 .s9 {
+    width: 300px;
+  }
+  .s89 a {
+    font-size: 17px;
+  }
+  .row-nas .col-md-12 img {
+    margin-left: 25%;
+    width: 150px;
+  }
+  .row-prozori img {
+    width: 150px;
+  }
+  .jumbotron {
+    width: 100%;
+    margin: 0 auto;
+  }
   .cont .iqPRO {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -701,6 +790,15 @@ footer {
   }
   .tab-cijene .box-pro-c table td {
     width: 100%;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  .breadcrumb {
+    padding-left: 25px;
+  }
+  .breadcrumb .breadcrumb-item {
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=style.css.map */

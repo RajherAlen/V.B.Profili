@@ -254,12 +254,12 @@ body {
 }
 /*******************************************FOOTER*******************************************/
 footer {
-  min-height: 8vh;
+  min-height: 10vh;
   background-color: #2f3640;
   color: $primaryText;
   text-align: center;
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /*******************************************PVC PROZORI*******************************************/
@@ -331,10 +331,11 @@ footer {
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 30px;
+    color: #8c7ae6;
   }
   h6 {
     margin: 45px 0 40px 0;
-    font-size: 21px;
+    font-size: 25px;
   }
 }
 .row-prozori {
@@ -354,7 +355,8 @@ footer {
   }
 
   img {
-    width: 400px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -457,8 +459,8 @@ footer {
 .podnaslov {
   text-align: center;
   img {
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
   }
   h5 {
     font-size: 24px;
@@ -469,19 +471,21 @@ footer {
 }
 
 .vrata-pro {
-  width: 70%;
+  width: 100%;
   margin: 0 auto 80px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
+  strong {
+    color: #c23616;
+  }
   .boxv {
     text-align: center;
   }
   img {
-    width: 280px;
-    height: 500px;
-    margin: 10px 20px;
+    width: 180px;
+    height: 300px;
+    margin: 10px 40px;
   }
 }
 
@@ -504,6 +508,10 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .jumbotron {
+    width: 90%;
+    margin: auto;
+  }
   .cont {
     width: 90%;
     margin: auto;
@@ -522,25 +530,69 @@ footer {
       font-size: 14px;
     }
   }
+  .row-nas {
+    .col-xl-5 {
+      img {
+        margin-left: 30%;
+        width: 300px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .s89 {
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    .s8 {
+      margin: 0 0 20px;
+    }
     a {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
-  .naslov .row-nas {
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    p {
-      margin: 5px auto;
+  .naslov {
+    .row-nas {
+      padding: 20px 0;
+      width: 100%;
+      p {
+        margin: 15px auto;
+        font-size: 14px;
+      }
+      h6 {
+        font-size: 18px;
+      }
+      img {
+        width: 200px;
+        margin-left: 35%;
+      }
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .ime-pro {
+    margin-left: 7%;
+
+    h5 {
+      font-size: 20px;
+      margin: 10px 0;
     }
     h6 {
-      font-size: 25px;
+      margin: 10px 0;
+    }
+  }
+  .row-prozori {
+    text-align: center;
+    img {
+      width: 200px;
+    }
+  }
+  .b1p {
+    img {
+      width: 300px;
     }
   }
   .cont {
@@ -585,8 +637,50 @@ footer {
       }
     }
   }
+
+  .breadcrumb {
+    padding-left: 35px;
+    .breadcrumb-item {
+      font-size: 12px;
+    }
+  }
 }
+
 @media screen and (max-width: 425px) {
+  .s89 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    .s8 {
+      margin: 0 0 20px;
+      width: 300px;
+    }
+    .s9 {
+      width: 300px;
+    }
+    a {
+      font-size: 17px;
+    }
+  }
+  .row-nas {
+    .col-md-12 {
+      img {
+        margin-left: 25%;
+        width: 150px;
+      }
+    }
+  }
+  .row-prozori {
+    img {
+      width: 150px;
+    }
+  }
+  .jumbotron {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .cont {
     .iqPRO {
       display: flex;
@@ -612,6 +706,18 @@ footer {
           width: 100%;
         }
       }
+    }
+  }
+  footer {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .breadcrumb {
+    padding-left: 25px;
+    .breadcrumb-item {
+      font-size: 11px;
     }
   }
 }
