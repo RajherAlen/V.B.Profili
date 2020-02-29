@@ -813,16 +813,19 @@ footer {
     width: 90%;
   }
   .jumbotron-fluid .row-nas h1 {
-    font-size: 34px;
+    font-size: 37px;
     text-shadow: none;
     margin-bottom: 10px;
   }
   .jumbotron-fluid .row-nas .lead {
     font-size: 18px;
-    width: 90vw;
+    width: 87vw;
   }
-  .jumbotron-fluid .col-md-12 img {
-    width: 320px;
+  .jumbotron-fluid .row-nas .im {
+    padding-left: 15px;
+  }
+  .jumbotron-fluid .row-nas .im img {
+    width: 270px;
     height: 200px;
   }
   .br {

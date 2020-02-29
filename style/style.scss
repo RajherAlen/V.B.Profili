@@ -712,20 +712,20 @@ footer {
     .row-nas {
       width: 90%;
       h1 {
-        font-size: 34px;
+        font-size: 37px;
         text-shadow: none;
         margin-bottom: 10px;
       }
       .lead {
         font-size: 18px;
-        width: 90vw;
+        width: 87vw;
       }
-    }
-
-    .col-md-12 {
-      img {
-        width: 320px;
-        height: 200px;
+      .im {
+        padding-left: 15px;
+        img {
+          width: 270px;
+          height: 200px;
+        }
       }
     }
   }
