@@ -5,7 +5,7 @@ body {
 }
 /*******************************************NAVIGATION*******************************************/
 .navbar {
-  background-color: #192a56;
+  background-color: #40739e;
   padding: 0 5%;
 
   .nav-item a {
@@ -143,7 +143,7 @@ body {
   a {
     color: $hoverTextLight;
     text-decoration: none;
-
+    transition: 1s;
     &:hover {
       color: #c23616;
       padding: 10px 0;
@@ -167,7 +167,7 @@ body {
     }
   }
   .btn {
-    background-color: #8c7ae6;
+    background-color: #40739e;
     width: 300px;
     font-size: 20px;
     font-weight: 600;
@@ -217,7 +217,7 @@ body {
   width: 100%;
   margin: 0 auto 70px;
   min-height: 30vh;
-  background-image: linear-gradient(to bottom right, #273c75, #f5f6fa);
+  background-image: linear-gradient(to bottom right, #40739e, #f5f6fa);
   background-attachment: fixed;
   padding: 0;
 
@@ -285,10 +285,13 @@ body {
 }
 /*******************************************FOOTER*******************************************/
 footer {
-  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 7vh;
   background-color: #2f3640;
   color: $primaryText;
-  text-align: center;
+
   padding-top: 10px;
   font-size: 22px;
 }
@@ -694,27 +697,59 @@ footer {
         width: 90vw;
       }
     }
-    .im {
+
+    .col-md-12 {
       img {
-        width: 1500px;
+        width: 320px;
+        height: 200px;
       }
     }
   }
   .br {
+    padding: 0;
+    margin-bottom: 15px;
     h1 {
       font-size: 25px;
     }
   }
   .onama {
     width: 90%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     p {
       font-size: 18px;
     }
     .btn {
-      height: 60px;
+      min-height: 7vh;
     }
   }
+  .carousel-inner {
+    width: 90%;
+    margin-bottom: 30px;
+  }
 
+  .h3proiz {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .proizvodi {
+    margin-bottom: 30px;
+    a {
+      font-size: 18px;
+    }
+  }
+  .cijenik {
+    margin-bottom: 30px;
+    p {
+      font-size: 25px;
+    }
+    a {
+      font-size: 18px;
+    }
+    .btn {
+      width: 200px;
+    }
+  }
   .question {
     padding-bottom: 5px;
 
@@ -731,12 +766,16 @@ footer {
   .kontakt {
     h1 {
       font-size: 25px;
+      padding-bottom: 30px;
     }
     p {
       font-size: 16px;
     }
     h2 {
       font-size: 23px;
+    }
+    .box {
+      margin: 30px auto;
     }
   }
   .s89 {
@@ -755,14 +794,7 @@ footer {
       font-size: 17px;
     }
   }
-  .row-nas {
-    .col-md-12 {
-      img {
-        margin-left: 25%;
-        width: 150px;
-      }
-    }
-  }
+
   .row-prozori {
     img {
       width: 150px;
