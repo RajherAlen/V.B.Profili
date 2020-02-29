@@ -55,7 +55,7 @@ body {
 }
 
 .jumbotron .row-nas {
-  width: 90%;
+  width: 70%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -696,6 +696,21 @@ footer {
   .s89 a {
     font-size: 20px;
   }
+  .jumbotron-fluid .row-nas {
+    width: 90%;
+  }
+  .onama {
+    width: 90%;
+  }
+  .question {
+    width: 100vw;
+  }
+  .question h1 {
+    font-size: 34px;
+  }
+  .question p {
+    font-size: 20px;
+  }
   .naslov .row-nas {
     padding: 20px 0;
     width: 100%;
@@ -782,7 +797,7 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
-  .jumbotron-fluid {
+  .jumbotron-fluid .row-nas {
     width: 90%;
   }
   .jumbotron-fluid .row-nas h1 {
