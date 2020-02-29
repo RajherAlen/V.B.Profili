@@ -590,8 +590,15 @@ footer {
     }
   }
   .jumbotron-fluid {
+    padding: 20px;
     .row-nas {
       width: 90%;
+      p {
+        margin-bottom: 30px;
+      }
+      h1 {
+        font-size: 45px;
+      }
     }
   }
   .onama {

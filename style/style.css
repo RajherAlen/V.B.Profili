@@ -696,8 +696,17 @@ footer {
   .s89 a {
     font-size: 20px;
   }
+  .jumbotron-fluid {
+    padding: 20px;
+  }
   .jumbotron-fluid .row-nas {
     width: 90%;
+  }
+  .jumbotron-fluid .row-nas p {
+    margin-bottom: 30px;
+  }
+  .jumbotron-fluid .row-nas h1 {
+    font-size: 45px;
   }
   .onama {
     width: 90%;
