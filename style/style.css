@@ -806,6 +806,9 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+  .jumbotron-fluid {
+    padding: 15px 0;
+  }
   .jumbotron-fluid .row-nas {
     width: 90%;
   }
