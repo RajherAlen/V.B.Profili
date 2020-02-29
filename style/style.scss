@@ -736,18 +736,21 @@ footer {
     margin-bottom: 15px;
     h1 {
       font-size: 25px;
+      padding-bottom: 15px;
     }
   }
   .onama {
-    width: 90%;
-
+    width: 96%;
     margin-bottom: 30px;
     padding-bottom: 30px;
     p {
-      font-size: 18px;
+      font-size: 17px;
+      margin-top: 25px;
     }
     .btn {
       min-height: 7vh;
+      font-size: 17px;
+      margin-top: 0;
     }
   }
   .carousel-inner {
@@ -760,7 +763,8 @@ footer {
     padding-bottom: 20px;
   }
   .proizvodi {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
     a {
       font-size: 18px;
     }
