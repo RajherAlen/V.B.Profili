@@ -709,8 +709,10 @@ footer {
 @media screen and (max-width: 425px) {
   .jumbotron-fluid {
     padding: 15px 0;
+
     .row-nas {
       width: 90%;
+      margin-bottom: 40px;
       h1 {
         font-size: 37px;
         text-shadow: none;
@@ -738,6 +740,7 @@ footer {
   }
   .onama {
     width: 90%;
+
     margin-bottom: 30px;
     padding-bottom: 30px;
     p {

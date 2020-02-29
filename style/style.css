@@ -811,6 +811,7 @@ footer {
   }
   .jumbotron-fluid .row-nas {
     width: 90%;
+    margin-bottom: 40px;
   }
   .jumbotron-fluid .row-nas h1 {
     font-size: 37px;
