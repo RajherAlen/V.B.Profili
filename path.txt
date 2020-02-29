@@ -1,1 +1,1 @@
-/mnt/c/Users/Alen/Desktop/V.B. PROFIL
+cd /mnt/c/Users/Alen/Desktop/V.B.\ PROFIL
