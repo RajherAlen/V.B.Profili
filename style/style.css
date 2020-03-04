@@ -142,6 +142,10 @@ body {
   padding: 15px 0;
 }
 
+.j-onama img {
+  width: 100%;
+}
+
 .j-onama h1 {
   font-weight: 700;
   color: #273c75;
@@ -1038,6 +1042,18 @@ footer {
   .podnaslov img {
     width: 100%;
     height: 100%;
+  }
+  .j-onama {
+    text-align: start;
+  }
+  .j-onama h1 {
+    font-size: 40px;
+  }
+  .j-onama h3 {
+    font-size: 22px;
+  }
+  .j-onama p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
