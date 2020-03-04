@@ -10,13 +10,14 @@ body {
 
   .nav-item a {
     color: $primaryText;
-    margin: 0 20px;
+    margin: 0 14px;
+    text-transform: uppercase;
     &:hover {
       border-bottom: 1px solid #c23616;
     }
   }
   ul {
-    width: 600px;
+    width: 760px;
   }
   img {
     max-height: 6vh;
@@ -60,7 +61,7 @@ body {
       margin: 0 0 30px 0;
     }
     img {
-      width: 100%;
+      width: 80%;
     }
   }
 }
@@ -101,19 +102,40 @@ body {
     font-size: 22px;
     background: #ffffff;
     margin: 20px 0 0 0;
-    max-width: 400px;
+    width: 200px;
     min-height: 6vh;
     border: 1px solid $hoverTextLight;
-
+    transition: width 1.2s;
     &:hover {
-      background-color: $hoverTextLight;
-      border: none;
-      color: #ffffff;
       width: 300px;
+      border: 1px solid #8c7ae6;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(7, 7, 7);
     }
   }
 }
 
+.j-onama {
+  padding: 15px 0;
+  h1 {
+    font-weight: 700;
+    color: #273c75;
+    border-bottom: 1px solid #c23616;
+  }
+  h3 {
+    font-weight: 600;
+    color: #c23616;
+  }
+  p {
+    font-size: 18px;
+    margin: 20px 0;
+    a {
+      color: #0097e6;
+    }
+  }
+}
 /*******************************************PROIZVODI*******************************************/
 .h3proiz {
   text-align: center;
@@ -130,7 +152,7 @@ body {
   flex-wrap: wrap;
   margin: 0 auto 90px;
   padding-bottom: 45px;
-  width: 60%;
+  width: 70%;
 
   border-bottom: 1px solid $hoverTextLight;
 
@@ -217,7 +239,7 @@ body {
   width: 100%;
   margin: 0 auto 70px;
   min-height: 30vh;
-  background-image: linear-gradient(to bottom right, #40739e, #f5f6fa);
+  background-image: linear-gradient(to bottom right, #40739e, #dddddd);
   background-attachment: fixed;
   padding: 0;
 
@@ -236,12 +258,13 @@ body {
 
 .kontakt {
   text-align: center;
+
   h1 {
     font-weight: 700;
     border-bottom: 1px solid $hoverTextLight;
     padding-bottom: 45px;
     width: 60%;
-    margin: auto;
+    margin: 30px auto 0;
   }
   .box {
     width: 70%;
@@ -249,17 +272,19 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 45px auto;
+    img {
+      width: 70px;
+      margin-bottom: 25px;
+    }
   }
-  img {
-    width: 70px;
-    margin-bottom: 25px;
-  }
+
   .box2 {
     h2 {
       font-weight: 700;
-      margin-bottom: 30px;
+      margin: 30px 0;
     }
     img {
+      width: 70px;
       margin-bottom: 45px;
     }
     &:hover a img {
@@ -270,6 +295,7 @@ body {
     }
   }
 }
+
 /*******************************************KONTAKT STRANICA*******************************************/
 .kont {
   width: 90%;
@@ -555,6 +581,15 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .navbar {
+    .nav-item a {
+      margin: 0 5px;
+      font-size: 15px;
+    }
+    ul {
+      width: 620px;
+    }
+  }
   .jumbotron {
     width: 90%;
     margin: auto;
@@ -605,8 +640,10 @@ footer {
   }
   .jumbotron-fluid {
     padding: 20px;
+    text-align: center;
     .row-nas {
       width: 90%;
+
       p {
         margin-bottom: 30px;
       }
@@ -711,7 +748,11 @@ footer {
       }
     }
   }
-
+  .cijenik {
+    p {
+      margin-top: 30px;
+    }
+  }
   .breadcrumb {
     padding-left: 35px;
     .breadcrumb-item {
@@ -738,9 +779,10 @@ footer {
       }
       .im {
         padding-left: 15px;
+        margin-left: 15%;
         img {
           width: 270px;
-          height: 200px;
+          height: 400px;
         }
       }
     }

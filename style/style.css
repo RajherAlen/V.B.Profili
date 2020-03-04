@@ -10,7 +10,8 @@ body {
 
 .navbar .nav-item a {
   color: #f8f8f8;
-  margin: 0 20px;
+  margin: 0 14px;
+  text-transform: uppercase;
 }
 
 .navbar .nav-item a:hover {
@@ -18,7 +19,7 @@ body {
 }
 
 .navbar ul {
-  width: 600px;
+  width: 760px;
 }
 
 .navbar img {
@@ -77,7 +78,7 @@ body {
 }
 
 .jumbotron .row-nas img {
-  width: 100%;
+  width: 80%;
 }
 
 /*******************************************CAROUSEL*******************************************/
@@ -120,16 +121,45 @@ body {
   font-size: 22px;
   background: #ffffff;
   margin: 20px 0 0 0;
-  max-width: 400px;
+  width: 200px;
   min-height: 6vh;
   border: 1px solid #487eb0;
+  -webkit-transition: width 1.2s;
+  transition: width 1.2s;
 }
 
 .onama .btn-primary:hover {
-  background-color: #487eb0;
-  border: none;
-  color: #ffffff;
   width: 300px;
+  border: 1px solid #8c7ae6;
+}
+
+.onama .btn-primary a {
+  text-decoration: none;
+  color: #070707;
+}
+
+.j-onama {
+  padding: 15px 0;
+}
+
+.j-onama h1 {
+  font-weight: 700;
+  color: #273c75;
+  border-bottom: 1px solid #c23616;
+}
+
+.j-onama h3 {
+  font-weight: 600;
+  color: #c23616;
+}
+
+.j-onama p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.j-onama p a {
+  color: #0097e6;
 }
 
 /*******************************************PROIZVODI*******************************************/
@@ -153,7 +183,7 @@ body {
       flex-wrap: wrap;
   margin: 0 auto 90px;
   padding-bottom: 45px;
-  width: 60%;
+  width: 70%;
   border-bottom: 1px solid #487eb0;
 }
 
@@ -251,8 +281,8 @@ body {
   width: 100%;
   margin: 0 auto 70px;
   min-height: 30vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#40739e), to(#f5f6fa));
-  background-image: linear-gradient(to bottom right, #40739e, #f5f6fa);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#40739e), to(#dddddd));
+  background-image: linear-gradient(to bottom right, #40739e, #dddddd);
   background-attachment: fixed;
   padding: 0;
 }
@@ -278,7 +308,7 @@ body {
   border-bottom: 1px solid #487eb0;
   padding-bottom: 45px;
   width: 60%;
-  margin: auto;
+  margin: 30px auto 0;
 }
 
 .kontakt .box {
@@ -293,17 +323,18 @@ body {
   margin: 45px auto;
 }
 
-.kontakt img {
+.kontakt .box img {
   width: 70px;
   margin-bottom: 25px;
 }
 
 .kontakt .box2 h2 {
   font-weight: 700;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .kontakt .box2 img {
+  width: 70px;
   margin-bottom: 45px;
 }
 
@@ -663,6 +694,13 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .navbar .nav-item a {
+    margin: 0 5px;
+    font-size: 15px;
+  }
+  .navbar ul {
+    width: 620px;
+  }
   .jumbotron {
     width: 90%;
     margin: auto;
@@ -715,6 +753,7 @@ footer {
   }
   .jumbotron-fluid {
     padding: 20px;
+    text-align: center;
   }
   .jumbotron-fluid .row-nas {
     width: 90%;
@@ -814,6 +853,9 @@ footer {
   .tab-cijene .box-pro-c table td {
     width: 40%;
   }
+  .cijenik p {
+    margin-top: 30px;
+  }
   .breadcrumb {
     padding-left: 35px;
   }
@@ -841,10 +883,11 @@ footer {
   }
   .jumbotron-fluid .row-nas .im {
     padding-left: 15px;
+    margin-left: 15%;
   }
   .jumbotron-fluid .row-nas .im img {
     width: 270px;
-    height: 200px;
+    height: 400px;
   }
   .br {
     padding: 0;
