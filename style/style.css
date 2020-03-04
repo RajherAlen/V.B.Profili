@@ -121,7 +121,7 @@ body {
   background: #ffffff;
   margin: 20px 0 0 0;
   max-width: 400px;
-  height: 6vh;
+  min-height: 6vh;
   border: 1px solid #487eb0;
 }
 
@@ -575,6 +575,12 @@ footer {
   color: #888888;
 }
 
+.card-img-top {
+  width: 60%;
+  min-height: 140px;
+  margin: auto;
+}
+
 .breadcrumb {
   min-height: 2vh;
   font-size: 15px;
@@ -610,14 +616,14 @@ footer {
 }
 
 .vrata-pro {
-  width: 100%;
+  width: 70%;
   margin: 0 auto 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -631,9 +637,14 @@ footer {
 }
 
 .vrata-pro img {
-  width: 180px;
-  height: 300px;
+  width: 170px;
+  height: 320px;
   margin: 10px 40px;
+}
+
+.vrata-pro .pp img {
+  width: 200px;
+  height: 280px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -675,6 +686,12 @@ footer {
   .row-nas .col-xl-5 img {
     margin-left: 30%;
     width: 300px;
+  }
+  .vrata-pro {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -847,7 +864,6 @@ footer {
     margin-top: 25px;
   }
   .onama .btn {
-    min-height: 7vh;
     font-size: 17px;
     margin-top: 0;
   }
@@ -861,7 +877,7 @@ footer {
   }
   .proizvodi {
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 20upx;
   }
   .proizvodi a {
     font-size: 18px;
@@ -956,13 +972,29 @@ footer {
     width: 100%;
   }
   footer p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .breadcrumb {
     padding-left: 25px;
   }
   .breadcrumb .breadcrumb-item {
     font-size: 11px;
+  }
+  .vrata-pro {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .naslov p {
+    font-size: 15px;
+  }
+  .podnaslov {
+    text-align: center;
+  }
+  .podnaslov img {
+    width: 100%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

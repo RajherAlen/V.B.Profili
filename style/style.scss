@@ -102,7 +102,7 @@ body {
     background: #ffffff;
     margin: 20px 0 0 0;
     max-width: 400px;
-    height: 6vh;
+    min-height: 6vh;
     border: 1px solid $hoverTextLight;
 
     &:hover {
@@ -474,7 +474,11 @@ footer {
 .proiz-bread a {
   color: $parText;
 }
-
+.card-img-top {
+  width: 60%;
+  min-height: 140px;
+  margin: auto;
+}
 .breadcrumb {
   min-height: 2vh;
   font-size: 15px;
@@ -507,10 +511,10 @@ footer {
 }
 
 .vrata-pro {
-  width: 100%;
+  width: 70%;
   margin: 0 auto 80px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
 
   .boxv {
@@ -520,9 +524,15 @@ footer {
     }
   }
   img {
-    width: 180px;
-    height: 300px;
+    width: 170px;
+    height: 320px;
     margin: 10px 40px;
+  }
+  .pp {
+    img {
+      width: 200px;
+      height: 280px;
+    }
   }
 }
 
@@ -574,6 +584,10 @@ footer {
         width: 300px;
       }
     }
+  }
+  .vrata-pro {
+    width: 90%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -748,7 +762,6 @@ footer {
       margin-top: 25px;
     }
     .btn {
-      min-height: 7vh;
       font-size: 17px;
       margin-top: 0;
     }
@@ -764,7 +777,7 @@ footer {
   }
   .proizvodi {
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 20upx;
     a {
       font-size: 18px;
     }
@@ -865,7 +878,7 @@ footer {
   }
   footer {
     p {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
@@ -873,6 +886,23 @@ footer {
     padding-left: 25px;
     .breadcrumb-item {
       font-size: 11px;
+    }
+  }
+  .vrata-pro {
+    width: 100%;
+    justify-content: center;
+  }
+  .naslov {
+    p {
+      font-size: 15px;
+    }
+  }
+  .podnaslov {
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
