@@ -81,15 +81,80 @@ body {
   width: 80%;
 }
 
+.jumbotron .row-nas .btn {
+  color: #070707;
+  font-size: 22px;
+  background: #ffffff;
+  margin: 20px 0 40px 0;
+  width: 300px;
+  min-height: 6vh;
+  border: 1px solid #487eb0;
+  -webkit-transition: width 1.2s;
+  transition: width 1.2s;
+}
+
+.jumbotron .row-nas .btn:hover {
+  width: 400px;
+  border: 1px solid #8c7ae6;
+}
+
+.jumbotron .row-nas .btn a {
+  text-decoration: none;
+  color: #070707;
+}
+
+/********************************************PROZIVODI CARD**********************************************/
+.card-pro .card {
+  height: 450px;
+  min-width: 100px;
+  -webkit-box-shadow: 0 8px 6px -6px #272727;
+          box-shadow: 0 8px 6px -6px #272727;
+}
+
+.card-pro .r {
+  border: 8px solid #e1b12c;
+}
+
+.card-pro .b {
+  border: 8px solid #40739e;
+}
+
+.card-pro .g {
+  border: 8px solid #8c7ae6;
+}
+
+.card-pro .btn {
+  color: #070707;
+  font-size: 22px;
+  background: #ffffff;
+  margin: 20px 0 40px 0;
+  width: 200px;
+  min-height: 3vh;
+  border: 1px solid #487eb0;
+  -webkit-transition: width 1.2s;
+  transition: width 1.2s;
+}
+
+.card-pro .btn:hover {
+  width: 220px;
+  border: 1px solid #8c7ae6;
+}
+
+.card-pro .btn a {
+  text-decoration: none;
+  color: #070707;
+}
+
 /*******************************************CAROUSEL*******************************************/
 .carousel-inner {
-  width: 70%;
+  width: 65%;
   margin: 0 auto 100px;
 }
 
 .carousel-inner img {
-  width: 100%;
-  max-height: 80vh;
+  margin: auto;
+  max-width: 65%;
+  max-height: 60vh;
 }
 
 /*******************************************O NAMA*******************************************/
@@ -374,6 +439,7 @@ footer {
   min-height: 7vh;
   background-color: #2f3640;
   color: #f8f8f8;
+  width: 100%;
   padding-top: 10px;
   font-size: 22px;
 }
@@ -661,6 +727,7 @@ footer {
           justify-content: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  grid-auto-flow: column;
 }
 
 .vrata-pro .boxv {
@@ -680,6 +747,24 @@ footer {
 .vrata-pro .pp img {
   width: 200px;
   height: 280px;
+}
+
+.ostalipro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 70px;
+  width: 70%;
+  margin: 0 auto 60px;
+}
+
+.ostalipro .ostaliImg {
+  margin: auto;
+}
+
+.ostalipro .ostaliImg img {
+  max-width: 400px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -865,6 +950,21 @@ footer {
   }
   .breadcrumb .breadcrumb-item {
     font-size: 12px;
+  }
+  .j-onama {
+    text-align: start;
+  }
+  .j-onama h1 {
+    font-size: 45px;
+  }
+  .j-onama h3 {
+    font-size: 24px;
+  }
+  .j-onama p {
+    font-size: 20px;
+  }
+  .j-onama ul {
+    font-size: 20px;
   }
 }
 
@@ -1054,6 +1154,11 @@ footer {
   }
   .j-onama p {
     font-size: 16px;
+  }
+  .ostalipro .ostaliImg {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
