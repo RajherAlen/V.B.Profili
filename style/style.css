@@ -1,10 +1,10 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 
 /*******************************************NAVIGATION*******************************************/
 .navbar {
-  background-color: #40739e;
+  background-color: #353b48;
   padding: 0 5%;
 }
 
@@ -19,10 +19,11 @@ body {
 }
 
 .navbar ul {
-  width: 760px;
+  width: 800px;
 }
 
 .navbar img {
+  max-width: 24vw;
   max-height: 6vh;
 }
 
@@ -71,19 +72,21 @@ body {
 }
 
 .jumbotron .row-nas h1 {
+  color: #8c7ae6;
   font-size: 60px;
   font-weight: 800;
-  text-shadow: 3px 1px #726a6a;
+  text-shadow: 3px 1px #7b6dc0;
   margin: 0 0 30px 0;
 }
 
 .jumbotron .row-nas img {
-  width: 80%;
+  width: 500px;
+  max-height: 700px;
 }
 
 .jumbotron .row-nas .btn {
   color: #070707;
-  font-size: 22px;
+  font-size: 20px;
   background: #ffffff;
   margin: 20px 0 40px 0;
   width: 300px;
@@ -94,7 +97,7 @@ body {
 }
 
 .jumbotron .row-nas .btn:hover {
-  width: 400px;
+  width: 370px;
   border: 1px solid #8c7ae6;
 }
 
@@ -105,6 +108,7 @@ body {
 
 /********************************************PROZIVODI CARD**********************************************/
 .card-pro .card {
+  margin: auto;
   height: 450px;
   min-width: 100px;
   -webkit-box-shadow: 0 8px 6px -6px #272727;
@@ -278,7 +282,7 @@ body {
 
 .cijenik {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .cijenik p {
@@ -297,7 +301,7 @@ body {
 
 .cijenik .btn {
   background-color: #40739e;
-  width: 300px;
+  min-width: 300px;
   font-size: 20px;
   font-weight: 600;
   margin: 10px 10px;
@@ -350,8 +354,8 @@ body {
   width: 100%;
   margin: 0 auto 70px;
   min-height: 30vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#40739e), to(#dddddd));
-  background-image: linear-gradient(to bottom right, #40739e, #dddddd);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00a8ff), to(#273c75));
+  background-image: linear-gradient(to bottom right, #00a8ff, #273c75);
   background-attachment: fixed;
   padding: 0;
 }
@@ -437,7 +441,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   min-height: 7vh;
-  background-color: #2f3640;
+  background-color: #353b48;
   color: #f8f8f8;
   width: 100%;
   padding-top: 10px;
@@ -505,11 +509,12 @@ footer {
 
 .naslov h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
 }
 
 .naslov h6 {
+  color: #44bd32;
   font-size: 27px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -535,6 +540,7 @@ footer {
 }
 
 .ime-pro h6 {
+  color: #44bd32;
   margin: 45px 0 40px 0;
   font-size: 25px;
 }
@@ -545,7 +551,7 @@ footer {
 }
 
 .row-prozori img {
-  width: 300px;
+  max-width: 300px;
 }
 
 .pro-kar {
@@ -767,6 +773,15 @@ footer {
   max-width: 400px;
 }
 
+.j-onama p {
+  font-size: 1.2rem;
+}
+
+.j-onama li {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 1230px) {
   .s89 {
     width: 100%;
@@ -785,7 +800,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .navbar .nav-item a {
     margin: 0 5px;
-    font-size: 15px;
+    font-size: 13px;
   }
   .navbar ul {
     width: 620px;
@@ -803,6 +818,38 @@ footer {
   }
   .cont .itemS8 ul li {
     width: 100%;
+  }
+  .proizvodi {
+    width: 80%;
+  }
+  .proizvodi li {
+    margin: 0 10px;
+  }
+  .proizvodi a {
+    font-size: 18px;
+  }
+  .headVrata h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  .card-pro .m {
+    margin-bottom: 20px;
+  }
+  .card-pro .card {
+    max-height: 400px;
+    max-width: 250px;
+    -webkit-box-shadow: 0 8px 6px -6px #272727;
+            box-shadow: 0 8px 6px -6px #272727;
+  }
+  .card-pro h5 {
+    font-size: 16px;
+  }
+  .card-pro p {
+    font-size: 14px;
+  }
+  .card-pro .btn {
+    width: auto;
+    font-size: 14px;
   }
   .breadcrumb {
     padding-left: 65px;
@@ -842,7 +889,6 @@ footer {
   }
   .jumbotron-fluid {
     padding: 20px;
-    text-align: center;
   }
   .jumbotron-fluid .row-nas {
     width: 90%;
@@ -865,23 +911,26 @@ footer {
   .question p {
     font-size: 20px;
   }
+  .naslov {
+    padding: 0;
+  }
   .naslov .row-nas {
     padding: 20px 0;
     width: 100%;
   }
   .naslov .row-nas p {
     margin: 15px auto;
-    font-size: 14px;
+    font-size: 1rem;
   }
   .naslov .row-nas h6 {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   .naslov .row-nas img {
     width: 200px;
     margin-left: 35%;
   }
   .naslov h1 {
-    font-size: 22px;
+    font-size: 1.4rem;
   }
   .ime-pro {
     margin-left: 7%;
@@ -942,6 +991,9 @@ footer {
   .tab-cijene .box-pro-c table td {
     width: 40%;
   }
+  .cijenik a {
+    font-size: 1.2rem;
+  }
   .cijenik p {
     margin-top: 30px;
   }
@@ -965,6 +1017,9 @@ footer {
   }
   .j-onama ul {
     font-size: 20px;
+  }
+  .ostalipro {
+    grid-gap: 5px;
   }
 }
 
@@ -1051,7 +1106,7 @@ footer {
     font-size: 16px;
   }
   .cijenik {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
   .kontakt h1 {
     font-size: 25px;
@@ -1133,8 +1188,23 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .naslov p {
-    font-size: 15px;
+  .naslov {
+    padding: 0;
+  }
+  .naslov h1 {
+    font-size: 1.2rem;
+  }
+  .jumbotron-fluid .row-nas img {
+    margin-left: 25%;
+  }
+  .jumbotron-fluid .row-nas h1 {
+    font-size: 1.6rem;
+  }
+  .jumbotron-fluid .row-nas h6 {
+    font-size: 18px;
+  }
+  .jumbotron-fluid .row-nas .lead {
+    font-size: 14px;
   }
   .podnaslov {
     text-align: center;
@@ -1143,22 +1213,36 @@ footer {
     width: 100%;
     height: 100%;
   }
+  .ime-pro h6 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .pro-kar p {
+    font-size: 14px;
+  }
   .j-onama {
+    width: 90%;
     text-align: start;
   }
   .j-onama h1 {
-    font-size: 40px;
+    font-size: 2rem;
   }
   .j-onama h3 {
-    font-size: 22px;
+    font-size: 1.2rem;
   }
   .j-onama p {
-    font-size: 16px;
+    font-size: 1rem;
+  }
+  .j-onama li {
+    font-size: 14px;
   }
   .ostalipro .ostaliImg {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .jumbotron-fluid .row-nas .im img {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
