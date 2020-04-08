@@ -23,7 +23,7 @@ body {
 }
 
 .navbar img {
-  max-width: 24vw;
+  max-width: 25vw;
   max-height: 6vh;
 }
 
@@ -741,7 +741,8 @@ footer {
 }
 
 .vrata-pro .boxv p {
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .vrata-pro img {
@@ -1082,7 +1083,7 @@ footer {
   }
   .jumbotron-fluid .row-nas .lead {
     font-size: 1.1rem;
-    width: 90vw;
+    width: 80vw;
   }
   .jumbotron-fluid .row-nas .im {
     padding-left: 15px;
@@ -1128,7 +1129,7 @@ footer {
   }
   .proizvodi {
     margin-bottom: 30px;
-    padding-bottom: 20upx;
+    padding-bottom: 20px;
   }
   .proizvodi a {
     font-size: 18px;
