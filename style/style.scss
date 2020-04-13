@@ -3,6 +3,9 @@
 body {
   font-family: "Spartan", sans-serif;
 }
+.btn {
+  cursor: pointer;
+}
 /*******************************************NAVIGATION*******************************************/
 .navbar {
   background-color: #353b48;
@@ -43,6 +46,9 @@ body {
 }
 
 /*******************************************JUMBO*******************************************/
+.jumbo-first {
+  min-height: 90vh;
+}
 .jumbotron {
   background-color: #ffffff;
 
@@ -53,6 +59,9 @@ body {
     align-items: center;
     .lead {
       width: 90%;
+      strong {
+        font-weight: 900;
+      }
     }
 
     h1 {
@@ -91,7 +100,8 @@ body {
 .card-pro {
   .card {
     margin: auto;
-    height: 450px;
+    padding-top: 30px;
+    height: 500px;
     min-width: 100px;
     box-shadow: 0 8px 6px -6px rgb(39, 39, 39);
   }
@@ -202,8 +212,8 @@ body {
 /*******************************************PROIZVODI*******************************************/
 .h3proiz {
   text-align: center;
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 900;
 
   width: 60%;
   padding-bottom: 45px;
@@ -229,7 +239,7 @@ body {
   a {
     color: #353b48;
     text-decoration: none;
-    transition: 1s;
+    transition: all ease-in;
     &:hover {
       color: #c23616;
       padding: 10px 0;
@@ -245,25 +255,25 @@ body {
     font-weight: 700;
     font-size: 27px;
   }
-  a {
-    color: $primaryText;
-    text-decoration: none;
 
-    &:hover {
-      color: $hoverTextDark;
-    }
-  }
   .btn {
+    a {
+      color: rgb(235, 235, 235);
+      text-decoration: none;
+    }
     background-color: #8c7ae6;
     min-width: 300px;
     font-size: 20px;
     font-weight: 600;
     margin: 10px 10px;
-    transition: 1.2s;
+    transition: all 1s;
     &:hover {
       width: 350px;
       background: #ffffff;
       border: 1px solid #8c7ae6;
+      a {
+        color: $hoverTextDark;
+      }
     }
   }
 }

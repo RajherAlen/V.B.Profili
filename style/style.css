@@ -2,6 +2,10 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 /*******************************************NAVIGATION*******************************************/
 .navbar {
   background-color: #353b48;
@@ -52,6 +56,10 @@ body {
 }
 
 /*******************************************JUMBO*******************************************/
+.jumbo-first {
+  min-height: 90vh;
+}
+
 .jumbotron {
   background-color: #ffffff;
 }
@@ -69,6 +77,10 @@ body {
 
 .jumbotron .row-nas .lead {
   width: 90%;
+}
+
+.jumbotron .row-nas .lead strong {
+  font-weight: 900;
 }
 
 .jumbotron .row-nas h1 {
@@ -109,7 +121,8 @@ body {
 /********************************************PROZIVODI CARD**********************************************/
 .card-pro .card {
   margin: auto;
-  height: 450px;
+  padding-top: 30px;
+  height: 500px;
   min-width: 100px;
   -webkit-box-shadow: 0 8px 6px -6px #272727;
           box-shadow: 0 8px 6px -6px #272727;
@@ -238,8 +251,8 @@ body {
 /*******************************************PROIZVODI*******************************************/
 .h3proiz {
   text-align: center;
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 900;
   width: 60%;
   padding-bottom: 45px;
   margin: 0 auto;
@@ -270,8 +283,8 @@ body {
 .proizvodi a {
   color: #353b48;
   text-decoration: none;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: all ease-in;
+  transition: all ease-in;
 }
 
 .proizvodi a:hover {
@@ -290,29 +303,29 @@ body {
   font-size: 27px;
 }
 
-.cijenik a {
-  color: #f8f8f8;
-  text-decoration: none;
-}
-
-.cijenik a:hover {
-  color: #192a56;
-}
-
 .cijenik .btn {
   background-color: #8c7ae6;
   min-width: 300px;
   font-size: 20px;
   font-weight: 600;
   margin: 10px 10px;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cijenik .btn a {
+  color: #ebebeb;
+  text-decoration: none;
 }
 
 .cijenik .btn:hover {
   width: 350px;
   background: #ffffff;
   border: 1px solid #8c7ae6;
+}
+
+.cijenik .btn:hover a {
+  color: #192a56;
 }
 
 /*******************************************CARD PROIZVODI*******************************************/
