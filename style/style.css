@@ -896,6 +896,9 @@ footer {
   .breadcrumb .breadcrumb-item {
     font-size: 14px;
   }
+  .row-nas .im {
+    margin-left: 15%;
+  }
   .row-nas .col-xl-5 img {
     margin-left: 30%;
     width: 300px;
@@ -931,6 +934,9 @@ footer {
   }
   .jumbotron-fluid .row-nas {
     width: 90%;
+  }
+  .jumbotron-fluid .row-nas .im {
+    margin-left: 10%;
   }
   .jumbotron-fluid .row-nas p {
     margin-bottom: 30px;
@@ -1100,7 +1106,7 @@ footer {
   }
   .jumbotron-fluid .row-nas .im {
     padding-left: 15px;
-    margin-left: 15%;
+    margin-left: 6%;
   }
   .jumbotron-fluid .row-nas .im img {
     width: 270px;

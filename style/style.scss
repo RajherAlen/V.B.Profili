@@ -775,6 +775,9 @@ footer {
     }
   }
   .row-nas {
+    .im {
+      margin-left: 15%;
+    }
     .col-xl-5 {
       img {
         margin-left: 30%;
@@ -805,7 +808,9 @@ footer {
 
     .row-nas {
       width: 90%;
-
+      .im {
+        margin-left: 10%;
+      }
       p {
         margin-bottom: 30px;
       }
@@ -982,7 +987,7 @@ footer {
       }
       .im {
         padding-left: 15px;
-        margin-left: 15%;
+        margin-left: 6%;
         img {
           width: 270px;
           height: 400px;
