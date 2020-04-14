@@ -662,6 +662,23 @@ footer {
   li {
     margin: 15px 0;
     font-size: 1.1rem;
+    cursor: pointer;
+    #more {
+      display: none;
+    }
+    #more2 {
+      display: none;
+    }
+    #more3 {
+      display: none;
+    }
+    #more4 {
+      display: none;
+    }
+
+    button {
+      margin: 10px;
+    }
   }
 }
 

@@ -794,6 +794,27 @@ footer {
 .j-onama li {
   margin: 15px 0;
   font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.j-onama li #more {
+  display: none;
+}
+
+.j-onama li #more2 {
+  display: none;
+}
+
+.j-onama li #more3 {
+  display: none;
+}
+
+.j-onama li #more4 {
+  display: none;
+}
+
+.j-onama li button {
+  margin: 10px;
 }
 
 .socialMedia {
