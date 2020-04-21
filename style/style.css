@@ -133,11 +133,11 @@ body {
 }
 
 .card-pro .b {
-  border: 8px solid #40739e;
+  border: 8px solid #e1b12c;
 }
 
 .card-pro .g {
-  border: 8px solid #8c7ae6;
+  border: 8px solid #e1b12c;
 }
 
 .card-pro .btn {
@@ -148,8 +148,8 @@ body {
   width: 200px;
   min-height: 3vh;
   border: 1px solid #487eb0;
-  -webkit-transition: width 1.2s;
-  transition: width 1.2s;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 .card-pro .btn:hover {
@@ -305,12 +305,12 @@ body {
 
 .cijenik .btn {
   background-color: #8c7ae6;
-  min-width: 300px;
+  width: 300px;
   font-size: 20px;
   font-weight: 600;
-  margin: 10px 10px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  margin: 10px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .cijenik .btn a {
@@ -509,6 +509,7 @@ footer {
 }
 
 .naslov .row-nas {
+  width: 80%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -542,7 +543,8 @@ footer {
 }
 
 .ime-pro {
-  margin-left: 110px;
+  width: 80%;
+  margin: auto;
 }
 
 .ime-pro h5 {
@@ -1126,8 +1128,8 @@ footer {
     width: 80vw;
   }
   .jumbotron-fluid .row-nas .im {
-    padding-left: 15px;
-    margin-left: 6%;
+    padding-left: 10px;
+    margin-left: 4%;
   }
   .jumbotron-fluid .row-nas .im img {
     width: 270px;
@@ -1281,7 +1283,7 @@ footer {
     font-size: 1.2rem;
   }
   .jumbotron-fluid .row-nas img {
-    margin-left: 25%;
+    margin-left: 15%;
   }
   .jumbotron-fluid .row-nas h1 {
     font-size: 1.6rem;

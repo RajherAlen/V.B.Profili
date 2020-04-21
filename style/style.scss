@@ -109,10 +109,10 @@ body {
     border: 8px solid #e1b12c;
   }
   .b {
-    border: 8px solid #40739e;
+    border: 8px solid #e1b12c;
   }
   .g {
-    border: 8px solid #8c7ae6;
+    border: 8px solid #e1b12c;
   }
   .btn {
     color: rgb(7, 7, 7);
@@ -122,7 +122,7 @@ body {
     width: 200px;
     min-height: 3vh;
     border: 1px solid $hoverTextLight;
-    transition: width 1.2s;
+    transition: width 0.5s;
     &:hover {
       width: 220px;
       border: 1px solid #8c7ae6;
@@ -257,16 +257,16 @@ body {
   }
 
   .btn {
+    background-color: #8c7ae6;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 20px;
+    transition: all 0.5s;
     a {
       color: rgb(235, 235, 235);
       text-decoration: none;
     }
-    background-color: #8c7ae6;
-    min-width: 300px;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 10px 10px;
-    transition: all 1s;
     &:hover {
       width: 350px;
       background: #ffffff;
@@ -434,6 +434,7 @@ footer {
   margin: 0;
 
   .row-nas {
+    width: 80%;
     align-items: flex-start;
     padding-top: 30px;
     margin-bottom: 30px;
@@ -460,7 +461,8 @@ footer {
   }
 }
 .ime-pro {
-  margin-left: 110px;
+  width: 80%;
+  margin: auto;
   h5 {
     font-weight: 700;
     font-size: 25px;
@@ -1003,8 +1005,8 @@ footer {
         width: 80vw;
       }
       .im {
-        padding-left: 15px;
-        margin-left: 6%;
+        padding-left: 10px;
+        margin-left: 4%;
         img {
           width: 270px;
           height: 400px;
@@ -1169,7 +1171,7 @@ footer {
   .jumbotron-fluid {
     .row-nas {
       img {
-        margin-left: 25%;
+        margin-left: 15%;
       }
       h1 {
         font-size: 1.6rem;
